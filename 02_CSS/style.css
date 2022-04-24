@@ -1,0 +1,167 @@
+/***** IMPORTS *****/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/***** GENERAL *****/
+/** Variables **/
+:root{
+    --clr-primary-blue: #8bacda;
+    --clr-primary-cyan: #00fff7;
+    --clr-bg-primary: #0d192b;
+    --clr-bg-card: #14253d;
+    --clr-accent: #2f415b;
+    --clr-white: #ffffff;
+    --ff-primary: 'Outfit', sans-serif;
+}
+
+/** Tags **/
+body{
+    margin: 0;
+    font-family: var(--ff-primary);
+    background-color: var(--clr-bg-primary);
+}
+
+h1{
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: var(--clr-white);
+}
+
+h1:hover{
+    color: var(--clr-primary-cyan);
+    cursor: pointer;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--clr-primary-cyan);
+}
+
+p{
+    font-weight: 300;
+    color: var(--clr-primary-blue);
+}
+
+a{
+    text-decoration: none;
+    color: var(--clr-white);
+}
+
+a:hover{
+    color: var(--clr-primary-cyan);
+    cursor: pointer;
+}
+
+hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid var(--clr-primary-blue);
+}
+
+/***** GRID *****/
+/***** FLEX *****/
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+}
+
+/***** STRUCTURE *****/
+/** header **/
+/** nav **/
+/** main **/
+/** footer **/
+
+/***** ITEMS ******/
+/** Card **/
+.card{
+    padding: 1rem;
+    width: 260px;
+    height: 500px;
+    background-color: var(--clr-bg-card);
+    border-radius: 1rem;
+}
+
+.image{
+    position: relative;
+    display: inline-block;
+}
+
+.image img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.img-top{
+    padding: 106px;
+    border-radius: 0.5rem;
+    background-color: rgba(0, 255, 247, 0.4);
+}
+
+.image .img-top{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.image:hover .img-top{
+    display: inline-block;
+    cursor: pointer;
+}
+
+.flex-row{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.flex-row-center{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.flex-row-center h2{
+    padding-left: 0.5rem;
+}
+
+.flex-row-center p{
+    padding-left: 0.5rem;
+}
+
+/** Avatar **/
+.avatar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.avatar img{
+    max-width: 2rem;
+    height: auto;
+    border-radius: 1rem;
+    border: 1px solid var(--clr-white);
+}
+
+.avatar p{
+    padding-left: 1rem;
+}
+
+/***** SITES *****/
+/***** MEDIAQUERIES *****/
+/***** ANIMATIONS *****/
+/***** OTHER *****/
+.attribution{
+    margin: 0.125rem;
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
